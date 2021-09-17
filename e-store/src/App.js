@@ -1,6 +1,8 @@
-import HomePage from './pages/homepage/homepage.component';
 import { Route, Switch } from 'react-router-dom';
+import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+
 import Header from './components/header/header.component';
 import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
@@ -13,7 +15,7 @@ function App() {
       <Switch>
         <Route exact path='/e-commerce' component={HomePage} />
         <Route path='/e-commerce/shop' component={ShopPage} />
-        <Route path='/e-commerce/signin' component={SignInAndSignUp} />
+        <Route path='/e-commerce/signin' component={SignInAndSignUpPage} />
       </Switch>
     </div>
   );
