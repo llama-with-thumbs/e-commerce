@@ -11,7 +11,6 @@ import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 import { createStructuredSelector } from 'reselect';
 
-
 import Header from './components/header/header.component';
 import './App.css';
 
