@@ -26,10 +26,6 @@ class ShopPage extends React.Component {
     const { updateCollections } = this.props;
     const collectionRef = firestore.collection('collections');
 
-    //it could be
-    //fetch('https://...').then()
-    // but the data is too nested
-
     collectionRef.get().then((snapshot) => {
       const collectionMap = convertCollectionsSnapshotToMap(snapshot);
       updateCollections(collectionMap);
